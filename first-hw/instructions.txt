@@ -1,0 +1,23 @@
+Expo:
+npx create-expo-app my-app
+cd my-app
+npm run android (press W for web -> npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0)
+
+React native cli:
+npx react-native init <projectName> 
+cd my-app
+npm start
+
+npx create-expo-app -t expo-template-blank-typescript
+
+For Stack Navigation: npm i @react-navigation/stack
+For Navigation Container: npm i @react-navigation/native
+
+For Bottom Tab Navigation: npm i @react-navigation/bottom-tabs
+
+For Tab View: npm install react-native-tab-view -> npm install react-native-pager-view
+
+For Svg: npm i react-native-svg
+
+
+
