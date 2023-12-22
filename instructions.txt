@@ -1,7 +1,7 @@
 Expo:
 npx create-expo-app my-app
 cd my-app
-npm run android (press W for web -> npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0)
+npm run android (npm start) (press W for web -> npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0)
 
 React native cli:
 npx react-native init <projectName> 
@@ -10,8 +10,9 @@ npm start
 
 npx create-expo-app -t expo-template-blank-typescript
 
-For Stack Navigation: npm i @react-navigation/stack
+For Stack Navigation: npm i @react-navigation/stack 
 For Navigation Container: npm i @react-navigation/native
+(or npm i @react-navigation/native-stack for ts)
 
 For Bottom Tab Navigation: npm i @react-navigation/bottom-tabs
 
@@ -19,5 +20,7 @@ For Tab View: npm install react-native-tab-view -> npm install react-native-page
 
 For Svg: npm i react-native-svg
 
+For axios: npm i axios
 
+For Expo Secure Store: npm i expo-secure-store
 
