@@ -19,7 +19,7 @@ const MyInputComponent: React.FC<MyInputComponentProps> = ({
         <TextInput
           value={value}
           onChangeText={(text) => myFunction(text)}
-          style={styles.input}
+          className='border border-platinum border-solid m-2.5 bg-platinum p-2.5 rounded'
           placeholder={placeholder}
           placeholderTextColor = '#BDBDBD'
           secureTextEntry={secureTextEntry}
@@ -29,16 +29,16 @@ const MyInputComponent: React.FC<MyInputComponentProps> = ({
   };
   
 
-const styles = StyleSheet.create({
-    input: {
-      borderWidth: 1,
-      borderColor: "#E8E8E8",
-      borderStyle: "solid",
-      margin: 10,
-      backgroundColor: '#E8E8E8',
-      padding: 10,
-      borderRadius: 5
-    },
-  });
+// const styles = StyleSheet.create({
+//     input: {
+//       borderWidth: 1,
+//       borderColor: "#E8E8E8",
+//       borderStyle: "solid",
+//       margin: 10,
+//       backgroundColor: '#E8E8E8',
+//       padding: 10,
+//       borderRadius: 5
+//     },
+//   });
 
 export default MyInputComponent;

@@ -29,8 +29,8 @@ const MyCheckBoxComponent:  React.FC<MyCheckBoxComponentProps> = ({
   };
 
   return (
-    <TouchableOpacity onPress={toggleCheckbox} style={styles.checkboxContainer}>
-      <View style={styles.checkbox}>
+    <TouchableOpacity onPress={toggleCheckbox} className='flex flex-row items-center'>
+      <View className='flex w-5 h-5 border border-black mr-2.5 justify-center items-center'>
         {isChecked && <Text>✓</Text>}
       </View>
       <Text>{label}</Text>
@@ -38,20 +38,20 @@ const MyCheckBoxComponent:  React.FC<MyCheckBoxComponentProps> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  checkboxContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  checkbox: {
-    width: 20,
-    height: 20,
-    borderWidth: 1,
-    borderColor: 'black',
-    marginRight: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   checkboxContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//   },
+//   checkbox: {
+//     width: 20,
+//     height: 20,
+//     borderWidth: 1,
+//     borderColor: 'black',
+//     marginRight: 10,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+// });
 
 export default MyCheckBoxComponent;

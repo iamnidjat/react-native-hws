@@ -11,27 +11,27 @@ const MyButtonComponent: React.FC<MyButtonComponentProps> = ({
     onPress,
   }) => {
     return (
-        <Pressable style={styles.button} onPress={onPress} >
-            <Text style={styles.text}>{title}</Text>
+        <Pressable className='border border-crayola border-solid bg-crayola rounded m-4' onPress={onPress} >
+            <Text className='text-white text-center p-2.5'>{title}</Text>
         </Pressable>
     );
 };
 
-const styles = StyleSheet.create({
-    button: {
-      borderWidth: 1,
-      borderColor: "#5DB075",
-      borderStyle: "solid",
-      backgroundColor: '#5DB075',
-      borderRadius: 100,
-      margin: 15
-    },
-    text: {
-        color: 'white',
-        textAlign: 'center',
-        padding: 10
-    }
-  });
+// const styles = StyleSheet.create({
+//     button: {
+//       borderWidth: 1,
+//       borderColor: "#5DB075",
+//       borderStyle: "solid",
+//       backgroundColor: '#5DB075',
+//       borderRadius: 100,
+//       margin: 15
+//     },
+//     text: {
+//         color: 'white',
+//         textAlign: 'center',
+//         padding: 10
+//     }
+//   });
 
 
 export default MyButtonComponent;

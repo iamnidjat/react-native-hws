@@ -1,4 +1,5 @@
 Expo:
+npm install -g expo-cli*
 npx create-expo-app my-app
 cd my-app
 npm run android (npm start) (press W for web -> npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0)
@@ -24,3 +25,8 @@ For axios: npm i axios
 
 For Expo Secure Store: npm i expo-secure-store
 
+Nativewind: https://www.nativewind.dev/quick-starts/expo -> https://www.nativewind.dev/getting-started/typescript
+
+For sqlite: npx expo install expo-sqlite
+
+For datetimepicker: npm i @react-native-community/datetimepicker

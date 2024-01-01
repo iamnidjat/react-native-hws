@@ -61,13 +61,13 @@ const LoginPage = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.iconContainer}>
+    <View className="flex-1 bg-white">
+      <View className="flex items-center">
         <StatusBarIcon />
       </View>
-      <View style={styles.subContainer}>
+      <View className="flex flex-row justify-between mb-7.5 mx-1.25">
         <XButtonIcon />
-        <Text style={styles.pageHeader}>Log In</Text>
+        <Text className="font-inter text-3xl non-italic font-semibold">Log In</Text>
         <Pressable onPress={handlePress}>
           <Text style={{ color: "#5DB075" }}>Sign Up</Text>
         </Pressable>
@@ -78,7 +78,7 @@ const LoginPage = () => {
         myFunction={setEmailInputValue}
         secureTextEntry={false}
       ></MyInputComponent>
-      <View style={styles.showHideContainer}>
+      <View className="flex flex-row items-center">
         <MyInputComponent
           style={{ flex: 1 }}
           placeholder="Password"
@@ -95,49 +95,49 @@ const LoginPage = () => {
         </Pressable>
       </View>
       <MyButtonComponent title="Log in" onPress={onLogin} />
-      <View style={styles.forgotPasswordContainer}>
-        <Text style={styles.text}>Forgot your password ?</Text>
+      <View className="flex justify-center items-center">
+        <Text className="text-crayola">Forgot your password ?</Text>
       </View>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "white",
-    flex: 1,
-  },
-  iconContainer: {
-    display: "flex",
-    alignItems: "center",
-  },
-  subContainer: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: 30,
-    marginLeft: 5,
-    marginRight: 5,
-  },
-  forgotPasswordContainer: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    color: "#5DB075",
-  },
-  pageHeader: {
-    fontFamily: "Inter",
-    fontSize: 30,
-    fontStyle: "normal",
-    fontWeight: "600",
-  },
-  showHideContainer: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     backgroundColor: "white",
+//     flex: 1,
+//   },
+//   iconContainer: {
+//     display: "flex",
+//     alignItems: "center",
+//   },
+//   subContainer: {
+//     display: "flex",
+//     flexDirection: "row",
+//     justifyContent: "space-between",
+//     marginBottom: 30,
+//     marginLeft: 5,
+//     marginRight: 5,
+//   },
+//   forgotPasswordContainer: {
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//   },
+//   text: {
+//     color: "#5DB075",
+//   },
+//   pageHeader: {
+//     fontFamily: "Inter",
+//     fontSize: 30,
+//     fontStyle: "normal",
+//     fontWeight: "600",
+//   },
+//   showHideContainer: {
+//     display: "flex",
+//     flexDirection: "row",
+//     alignItems: "center",
+//   },
+// });
 
 export default LoginPage;
