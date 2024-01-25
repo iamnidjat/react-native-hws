@@ -28,17 +28,4 @@ const MyInputComponent: React.FC<MyInputComponentProps> = ({
     );
   };
   
-
-// const styles = StyleSheet.create({
-//     input: {
-//       borderWidth: 1,
-//       borderColor: "#E8E8E8",
-//       borderStyle: "solid",
-//       margin: 10,
-//       backgroundColor: '#E8E8E8',
-//       padding: 10,
-//       borderRadius: 5
-//     },
-//   });
-
 export default MyInputComponent;

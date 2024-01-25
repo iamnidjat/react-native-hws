@@ -102,42 +102,5 @@ const LoginPage = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     backgroundColor: "white",
-//     flex: 1,
-//   },
-//   iconContainer: {
-//     display: "flex",
-//     alignItems: "center",
-//   },
-//   subContainer: {
-//     display: "flex",
-//     flexDirection: "row",
-//     justifyContent: "space-between",
-//     marginBottom: 30,
-//     marginLeft: 5,
-//     marginRight: 5,
-//   },
-//   forgotPasswordContainer: {
-//     display: "flex",
-//     justifyContent: "center",
-//     alignItems: "center",
-//   },
-//   text: {
-//     color: "#5DB075",
-//   },
-//   pageHeader: {
-//     fontFamily: "Inter",
-//     fontSize: 30,
-//     fontStyle: "normal",
-//     fontWeight: "600",
-//   },
-//   showHideContainer: {
-//     display: "flex",
-//     flexDirection: "row",
-//     alignItems: "center",
-//   },
-// });
 
 export default LoginPage;

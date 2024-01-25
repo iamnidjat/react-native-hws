@@ -9,11 +9,10 @@ npx react-native init <projectName>
 cd my-app
 npm start
 
-npx create-expo-app -t expo-template-blank-typescript
+For Ts version: npx create-expo-app -t expo-template-blank-typescript
 
-For Stack Navigation: npm i @react-navigation/stack 
+For Stack Navigation: npm i @react-navigation/native-stack/@react-navigation/stack
 For Navigation Container: npm i @react-navigation/native
-(or npm i @react-navigation/native-stack for ts)
 
 For Bottom Tab Navigation: npm i @react-navigation/bottom-tabs
 
@@ -30,3 +29,11 @@ Nativewind: https://www.nativewind.dev/quick-starts/expo -> https://www.nativewi
 For sqlite: npx expo install expo-sqlite
 
 For datetimepicker: npm i @react-native-community/datetimepicker
+
+For Audio and Video: npx expo install expo-av -> npx expo install expo-file-system
+
+For Portal: npm i @gorhom/portal
+
+For Unit-testing (Jest): https://docs.expo.dev/develop/unit-testing/ (+ npm i --save-dev @types/react-test-renderer, npm install --save-dev @testing-library/react-native)
+
+For Validation: npm i formik -> npm i yup

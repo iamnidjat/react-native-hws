@@ -38,20 +38,4 @@ const MyCheckBoxComponent:  React.FC<MyCheckBoxComponentProps> = ({
   );
 };
 
-// const styles = StyleSheet.create({
-//   checkboxContainer: {
-//     flexDirection: 'row',
-//     alignItems: 'center',
-//   },
-//   checkbox: {
-//     width: 20,
-//     height: 20,
-//     borderWidth: 1,
-//     borderColor: 'black',
-//     marginRight: 10,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-// });
-
 export default MyCheckBoxComponent;
